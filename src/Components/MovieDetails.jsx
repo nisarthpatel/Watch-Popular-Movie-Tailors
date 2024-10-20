@@ -4,7 +4,7 @@ import { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { MovieContext } from '../contexts/MovieContext';
 
-const API_KEY = 'ea2be052cfe893d409f6c2d7329b65a7';
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 const BASE_URL = 'https://api.themoviedb.org/3';
 
 const MovieDetails = () => {
